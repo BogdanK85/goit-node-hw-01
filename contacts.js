@@ -1,10 +1,11 @@
-// const fs = require("fs/promises");
-// const path = require("path");
+const fs = require("fs/promises");
+const path = require("path");
+const { nanoid } = require("nanoid");
 // import { nanoid } from "nanoid";
 // import { promises as fsPromises } from "fs";
-import fs from "fs/promises";
-import path from "path";
-import { nanoid } from "nanoid";
+// import fs from "fs/promises";
+// import path from "path";
+// import { nanoid } from "nanoid";
 
 const contactsPath = path.join(__dirname, "db/contacts.json");
 
@@ -75,7 +76,7 @@ async function addContact(name, email, phone) {
 module.exports = {
   listContacts,
   getContactById,
-  updatedContactsIndex,
+  //   updatedContactsIndex,
   addContact,
   removeContact,
 };
